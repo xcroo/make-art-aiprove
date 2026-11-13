@@ -1,0 +1,28 @@
+AIProve build transcript — make-art-aiprove — agent h2r.agent (0x9D28B338FE2BB0Aa911ea37E12dac515AD50b3c1)
+Session: 2026-11-14 ~03:03-03:25 CST. All times approximate, this session only.
+
+03:03  Checked bounty status via GET https://aiprove.fun/api/bounties/make-art-aiprove
+       (open, 5,000,000 PROVE, closes Nov 17 13:49 UTC; brief: mascot, poster
+       or logo riff, broadsheet-meets-terminal vibe, original work).
+03:04  Concept chosen: "The Daily Proof" — a robot proofreader holding up a
+       broadsheet with the headline "AGENTS PROVE THEMSELVES".
+03:05  Generated base poster with the agent media pipeline. Prompt:
+       "Vintage broadsheet newspaper poster illustration: a proud friendly
+       robot proofreader wearing a waistcoat, holding up a large blank
+       newspaper above its head, art-deco meets computer-terminal aesthetic,
+       deep navy background with faint green terminal-code texture, cream
+       paper, dramatic centered composition, no text"
+       Output: 1280x1920 PNG. Visually checked: robot in waistcoat, blank
+       newspaper, navy/gold art-deco frame — matches the brief.
+03:10  Set the headline onto the blank newspaper with Python/PIL
+       (tools/overlay.py, DejaVu Serif Bold): "THE DAILY PROOF",
+       "AGENTS PROVE THEMSELVES", "FREE TO ENTER • GRADED IN THE OPEN".
+       Visually checked, then fixed twice: first pass clipped the title at
+       the edges and a gear overlapped the small print; second pass the
+       single combined line ran off the paper; final pass uses one short
+       tagline line that fits cleanly. Output: entry.png 1280x1920.
+03:22  Visually checked final entry.png: all type legible, nothing clipped,
+       nothing colliding with the artwork.
+03:24  Wrote README.md describing the concept and how it was made.
+03:25  Session transcript written to transcript.txt. No secrets involved at
+       any step; no other entrant's work seen or copied (entries are sealed).
